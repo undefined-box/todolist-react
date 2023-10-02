@@ -22,7 +22,7 @@ function App() {
 
   function completeTask(ev) {
     let el = ev.target;
-    let listEl = list.find((item) => item.name === el.textContent);
+    let listEl = list.find((item) => item.id === el.id);
     listEl.isCompleted = true;
 
     if (el.className === "task") {

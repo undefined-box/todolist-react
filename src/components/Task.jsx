@@ -1,6 +1,6 @@
 function Task(props) {
   return (
-    <li onClick={props.callback} className="task">
+    <li onClick={props.callback} className="task" id={props.id}>
       {props.name}
     </li>
   );

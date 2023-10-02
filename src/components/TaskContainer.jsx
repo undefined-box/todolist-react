@@ -6,7 +6,7 @@ function TaskContainer(props) {
  
 
   const preppedSource = source.map((item) => (
-    <Task name={item.name} key={item.id} source = {source} callback = {props.callback} />
+    <Task name={item.name} key={item.id} source = {source} callback = {props.callback} id={item.id} />
   ));
 
 
